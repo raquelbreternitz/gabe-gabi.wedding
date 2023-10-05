@@ -11,13 +11,15 @@ body {
 }
 
 .container {
+  height: 99vh;
   width: 40vw;
   margin: 0 auto;
-  padding: 8em 0;
+  padding: 0;
 }
 
 
 .polaroids {
+  height: 500px;
   display: flex;
   margin: 2em;
   align-items: center;
@@ -27,9 +29,8 @@ body {
 }
 
 .polaroids:hover .polaroid {
-  animation: shake 4s;
-  animation-iteration-count: infinite;
   filter: grayscale(0);
+  animation: none;
 }
   
 .save-the-date {
@@ -46,23 +47,28 @@ body {
   filter: grayscale(1);
   position: absolute;
 
+  animation: shake 20s;
+  animation-iteration-count: infinite;
+
   z-index: 1;
 }
 
 .gabe, .gabi {
   transition: all 200ms;
-  
 }
 
 .gabe {
   transform: rotate(-2deg);
+  top: 80px;
   left: -18px;
+  animation-direction: reverse;
+
 }
 
 .gabi {
   transform: rotate(2deg);
+  top: 100px;
   right: -46px;
-  top: -50px;
 }
 
 .polaroids:hover .gabi {
@@ -72,7 +78,6 @@ body {
 
 .polaroids:hover .gabe {
   left: -110px;
-  animation-direction: reverse;
 }
 
 
@@ -97,6 +102,7 @@ body {
   width: 343px;
   margin: 0 auto;
   position: relative;
+  top: -80px;
   z-index: -1;
 
 }
