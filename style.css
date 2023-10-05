@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  height: 99vh;
+  height: 90vh;
   width: 40vw;
   margin: 0 auto;
   padding: 0;
@@ -173,4 +173,20 @@ body {
 .arrow::after {
   content: "";
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .polaroids {
+    height: 500px;
+    display: flex;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7em;
+    position: relative;
+  }
 }
