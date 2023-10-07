@@ -59,6 +59,10 @@ body {
   z-index: -1;
 }
 
+.palm {
+  width: 100px;
+}
+
 .gabe, .gabi {
   transition: all 200ms;
 }
@@ -183,11 +187,16 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+
+  .polaroid {
+    width: 12em;
   }
 
-  .container {
+  .palm {
+    width: 60px;
+  }
+
+  /* .container {
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -222,6 +231,6 @@ body {
 
   .polaroids:hover .gabe, .polaroids:hover.gabi {
     transform: translateX(0);
-  }
+  } */
 
 }
