@@ -102,7 +102,7 @@ body {
   box-sizing: border-box;
   height: 3.5em;
   width: 22em;
-  margin-top: 2em;
+  margin: 2em 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -180,4 +180,41 @@ body {
 .arrow::after {
   content: "";
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .gabe {
+    transform: translateX(0) translateY(10em);
+  }
+
+  .gabi {
+    transform: translateX(0) translateY(-11em);
+  }
+
+  .polaroids {
+    height: initial;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .polaroids:hover .gabe, .polaroids:hover.gabi {
+    transform: translateX(0);
+  }
+
 }
